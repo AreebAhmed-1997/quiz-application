@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
-</body>
+    <div id="heading">
+            <h1> APPLICATION FOR ONLINE QUIZ </h1>
+    </div>
+            <div>
+            <fieldset id="fieldset1">
+               <p>Q:What is the standard form of SRAM</p>
+               <input type="radio" name="q1_a1" id="question1"> Single read and memory <br>
+               <input type="radio" name="q1_a1" id="question2"> Simulator read only memory <br>
+               <input type="radio" name="q1_a1" id="question3"> Static read only memory<br>
+               <input type="radio" name="q1_a1" id="question4">  Singularly read only memory<br>
+            </fieldset>
+        </div>  <hr> 
+        
+        <div>
+            <fieldset id="fieldset2">
+               <p>Q:What is the standard form of RAM</p>
+               <input type="radio" name="q1_a11" id="question11"> Read and memory<br>
+               <input type="radio" name="q1_a11" id="question12"> Memory and read<br>
+               <input type="radio" name="q1_a11" id="question13"> Random acess memory<br>
+               <input type="radio" name="q1_a11" id="question14"> Random and memory<br>
+            </fieldset>
+        </div> <hr> 
+
+        <div>
+            <fieldset id="fieldset3">
+               <p>Q:What is the standard form of DRAM</p>
+               <input type="radio" name="q1_a22" id="question21"> Dual random acess memory  <br>
+               <input type="radio" name="q1_a22" id="question22"> Dynamic random acess memory  <br>
+               <input type="radio" name="q1_a22" id="question23">  Disk random acess memory <br>
+               <input type="radio" name="q1_a22" id="question24">  Dynamic read only memory<br>
+            </fieldset>
+        </div>  <hr>
+
+        <div>
+            <fieldset id="fieldset4">
+               <p>Q:What is the standard form of EROM</p>
+               <input type="radio" name="q1_a33" id="question31">Electtronic read only memory<br>
+               <input type="radio" name="q1_a33" id="question32">Electric read only memory <br>
+               <input type="radio" name="q1_a33" id="question33"> Emmiting rays of read only memory <br>
+               <input type="radio" name="q1_a33" id="question34"> Electronic Erasable Read pnlu memory <br>
+            </fieldset>
+        </div>  <hr>
+        <div id="button">
+        <button id="btn0" onclick="calculating_the_result()">Result</button>
+    </div>
+    <script src="app.js"></script>
+    </body>
 </html>

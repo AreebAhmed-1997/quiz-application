@@ -1,0 +1,21 @@
+#heading{
+    width: 100%;
+    text-align: center;
+}
+#fieldset1,#fieldset2,#fieldset3,#fieldset4{
+    border: 0px solid #ffffff;
+}
+#btn0{
+    border: 0px solid #ffffff;
+    background-color: transparent;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+   border-radius: 10%;
+
+}
+#button{
+    width: 100%;
+    text-align: center;
+}
