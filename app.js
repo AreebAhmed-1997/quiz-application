@@ -1,23 +1,16 @@
 var score = 0
+
 function calculating_the_result(){
     var q_right_answer = document.getElementById('question1')
-    var q_wrong_anser1a = document.getElementById('question2')
-    var q_wrong_anser1b = document.getElementById("question3")
-    var q_wrong_anser1c = document.getElementById("question4")
-
-    if( q_right_answer.checked == true){
-        score+=10
+    if(  q_right_answer.checked == true){
+        score+=10  
     }
+  
     else{
         score+=0
     }
-    
 
     var q_right_answer1 = document.getElementById("question11")
-    var q_wrong_anser2a = document.getElementById("question12")
-    var q_wrong_anser2b  = document.getElementById("question13")
-    var q_wrong_anser2c  = document.getElementById("question14")
-    
     if( q_right_answer1.checked == true){
         score+=10
     }
@@ -26,24 +19,99 @@ function calculating_the_result(){
     }
 
     var q_right_answer2  = document.getElementById("question21")
-    var q_wrong_anser3a  = document.getElementById("question22")
-    var q_wrong_anser3b  = document.getElementById("question23")
-    var q_wrong_anser3c = document.getElementById("question24")
     if( q_right_answer2.checked == true){
         score+=10
     }
     else{
         score+=0
     }
+
     var q_right_answer3 = document.getElementById("question31")
-    var q_wrong_anser4a = document.getElementById("question32")
-    var q_wrong_anser4b = document.getElementById("question33")
-    var q_wrong_anser4c = document.getElementById("question34")
     if( q_right_answer3.checked == true){
         score+=10
     }
     else{
         score+=0
     }
-     document.write("your score is " + score++ )
+
+    var q_right_answer4 = document.getElementById("question41")
+    if(  q_right_answer4.checked == true){
+    score+=10  
+    }
+    else{
+    score+=0
+    }
+
+    var q_right_answer5 = document.getElementById("question51")
+    if(  q_right_answer5.checked == true){
+    score+=10  
+    }
+    else{
+    score+=0
+    }
+
+    var q_right_answer6 = document.getElementById("question61")
+    if(  q_right_answer6.checked == true){
+    score+=10  
+    }
+
+    else{
+    score+=0
+    }
+    var q_right_answer7 = document.getElementById("question71")
+    if(  q_right_answer7.checked == true){
+    score+=10  
+    }
+
+    else{
+    score+=0
+    }
+
+    var q_right_answer8 = document.getElementById("question81")
+    if(  q_right_answer8.checked == true){
+    score+=10  
+    }
+    else{
+    score+=0
+    }       
+
+    var q_right_answer9 = document.getElementById("question91") 
+    if(  q_right_answer9.checked == true){
+    score+=10  
+    }
+
+    else{
+    score+=0
+    }
+    
+    
+    document.querySelector("#bod").style.backgroundColor=" green";
+    document.querySelector("#bod").style.color=" #fff";
+    document.querySelector("#bod11").style.backgroundColor=" green";
+    document.querySelector("#bod11").style.color=" #fff";
+    document.querySelector("#bod21").style.backgroundColor=" green";
+    document.querySelector("#bod21").style.color=" #fff";
+    document.querySelector("#boda").style.backgroundColor=" green";
+    document.querySelector("#boda").style.color=" #fff";
+    document.getElementById("ANSWER").innerHTML="your score is &nbsp;"+"<br>"+ score++ +"/100"
+ 
+    if (score++ >=80 ){
+        document.getElementById("ANSWER1").innerHTML="your grade is A++ " 
+    }
+   else if (score++ >=60){
+    document.getElementById("ANSWER1").innerHTML="your grade is A+ " 
+    }
+
+    else if (score++ >=40){
+    document.getElementById("ANSWER1").innerHTML="your grade is B" 
+    }
+    else if (score++ >=20){
+    document.getElementById("ANSWER1").innerHTML="your grade is C" 
+    }
+    else{
+    document.getElementById("ANSWER1").innerHTML="your grade is F" 
+    }
+document.getElementById("btn0").disabled = true;
+
+
 }
